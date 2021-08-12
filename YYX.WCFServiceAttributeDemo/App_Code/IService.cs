@@ -12,8 +12,7 @@ public interface IService
 {
 
 	[OperationContract]
-	[Authorize]
-	MyParameterInspector
+	[MyOperationBehavior]
 	string GetData(int value);
 
 	[OperationContract]

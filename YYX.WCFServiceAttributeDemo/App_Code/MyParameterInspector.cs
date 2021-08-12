@@ -7,9 +7,9 @@ using System.Web;
 /// <summary>
 /// Summary description for Class1
 /// </summary>
-public class MyParameterInspector :Attribute, IParameterInspector
+public class MyParameterInspector : IParameterInspector
 {
-    public MyParameterInspector ()
+    public MyParameterInspector()
     {
         //
         // TODO: Add constructor logic here
@@ -18,11 +18,11 @@ public class MyParameterInspector :Attribute, IParameterInspector
 
     public void AfterCall(string operationName, object[] outputs, object returnValue, object correlationState)
     {
-        throw new NotImplementedException();
+
     }
 
     public object BeforeCall(string operationName, object[] inputs)
     {
-        throw new NotImplementedException();
+        return null;
     }
 }
